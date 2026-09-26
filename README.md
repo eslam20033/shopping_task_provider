@@ -1,17 +1,44 @@
-# shopping_task_provider
+<h1 align="center">🛒 Shopping Cart App</h1>
 
-A new Flutter project.
+<p align="center">
+  <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
+  <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" />
+  <img src="https://img.shields.io/badge/Provider-8A2BE2?style=for-the-badge&logo=pro&logoColor=white" />
+</p>
 
-## Getting Started
+<p align="center">
+  تطبيق سلة مشتريات مبني بـ Flutter يوضح كيفية إدارة الحالة (State Management) باستخدام <b>Provider</b> مع تطبيق هيكلية <b>Feature-Based Architecture</b>.
+</p>
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 📸 الواجهة (Screenshots)
+<!-- تنبيه: لكي تظهر الصورة، قم بإنشاء مجلد باسم screenshots بجوار مجلد lib، وضع بداخله صورة التطبيق باسم app_ui.png -->
+<div align="center">
+  <img src="screenshots/app_ui.png" alt="App UI" width="300"/>
+</div>
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## ✨ المميزات (Features)
+- ⚡ **إدارة الحالة (State Management):** التحديث الفوري للمجموع الكلي باستخدام `Provider` بدون الحاجة لاستخدام `setState`.
+- 🏗️ **Clean Architecture:** تقسيم المشروع إلى (Models, Providers, Widgets, Screens, Theme) لسهولة الصيانة والتطوير.
+- 🎨 **تصميم مخصص:** الاعتماد على ملف `AppColors` كمرجع مركزي لإدارة ألوان التطبيق.
+- 🚀 **كود نظيف:** فصل واجهة المستخدم (UI) عن منطق العمل (Business Logic) لاحترافية أعلى في كتابة الكود.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📂 هيكل المشروع (Folder Structure)
+```text
+lib/
+├── core/
+│   └── theme/
+│       └── app_colors.dart
+├── features/
+│   └── cart/
+│       ├── models/
+│       │   └── product_model.dart
+│       ├── providers/
+│       │   └── cart_provider.dart
+│       ├── widgets/
+│       │   ├── product_item_widget.dart
+│       │   └── cart_total_bottom_bar.dart
+│       └── screens/
+│           └── shopping_cart_screen.dart
+└── main.dart
