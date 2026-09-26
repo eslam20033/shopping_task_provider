@@ -15,7 +15,7 @@
 ## 📸 الواجهة (Screenshots)
 <!-- تنبيه: لكي تظهر الصورة، قم بإنشاء مجلد باسم screenshots بجوار مجلد lib، وضع بداخله صورة التطبيق باسم app_ui.png -->
 <div align="center">
-  <img src="screenshots/app_ui.png" alt="App UI" width="300"/>
+<img src="lib/screenshots/app_ui.png" alt="App UI" width="300"/>
 </div>
 
 ## ✨ المميزات (Features)
